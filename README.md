@@ -75,5 +75,4 @@ curl -X GET \
 本项目基于 [jonssonyan/cf-workers-proxy](https://github.com/jonssonyan/cf-workers-proxy) 进行功能扩展开发，主要新增以下能力：
 - 动态代理目标更新接口 `/update-hostname`
 - KV 存储持久化配置
-- 自动域名替换增强逻辑
-- 调试模式支持
+
