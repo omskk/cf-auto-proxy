@@ -23,20 +23,20 @@
 3. **配置环境变量**
    - 在 Worker 设置页面 → 设置 → 变量 → 环境变量
 
-    | 变量名                    | 必填  | 默认值   | 示例                                             | 备注                  |
-    |------------------------|-----|-------|------------------------------------------------|---------------------|
-    | ORG_PROXY_HOSTNAME     | √   |       | github.com                                     | 代理地址 hostname       |
-    | AUTH_KEY               | √   |       | your-secret-string                             | API调用认证密钥，需包含在请求头 |
-    | PROXY_PROTOCOL         | ×   | https | https                                          | 代理地址协议              |
-    | PATHNAME_REGEX         | ×   |       | ^/jonssonyan/                                  | 代理地址路径正则表达式         |
-    | UA_WHITELIST_REGEX     | ×   |       | (curl)                                         | User-Agent 白名单正则表达式 |
-    | UA_BLACKLIST_REGEX     | ×   |       | (curl)                                         | User-Agent 黑名单正则表达式 |
-    | IP_WHITELIST_REGEX     | ×   |       | (192.168.0.1)                                  | IP 白名单正则表达式         |
-    | IP_BLACKLIST_REGEX     | ×   |       | (192.168.0.1)                                  | IP 黑名单正则表达式         |
-    | REGION_WHITELIST_REGEX | ×   |       | (JP)                                           | 地区白名单正则表达式          |
-    | REGION_BLACKLIST_REGEX | ×   |       | (JP)                                           | 地区黑名单正则表达式          |
-    | URL302                 | ×   |       | https://github.com/jonssonyan/cf-workers-proxy | 302 跳转地址            |
-    | DEBUG                  | ×   | false | false                                          | 开启调试                |
+    | 变量名                    | 必填 | 默认值   | 示例                                             | 备注                  |
+    |------------------------|----|-------|------------------------------------------------|---------------------|
+    | ORG_PROXY_HOSTNAME     | ×  |       | github.com                                     | 代理地址 hostname       |
+    | AUTH_KEY               | √  |       | your-secret-string                             | API调用认证密钥，需包含在请求头 |
+    | PROXY_PROTOCOL         | ×  | https | https                                          | 代理地址协议              |
+    | PATHNAME_REGEX         | ×  |       | ^/jonssonyan/                                  | 代理地址路径正则表达式         |
+    | UA_WHITELIST_REGEX     | ×  |       | (curl)                                         | User-Agent 白名单正则表达式 |
+    | UA_BLACKLIST_REGEX     | ×  |       | (curl)                                         | User-Agent 黑名单正则表达式 |
+    | IP_WHITELIST_REGEX     | ×  |       | (192.168.0.1)                                  | IP 白名单正则表达式         |
+    | IP_BLACKLIST_REGEX     | ×  |       | (192.168.0.1)                                  | IP 黑名单正则表达式         |
+    | REGION_WHITELIST_REGEX | ×  |       | (JP)                                           | 地区白名单正则表达式          |
+    | REGION_BLACKLIST_REGEX | ×  |       | (JP)                                           | 地区黑名单正则表达式          |
+    | URL302                 | ×  |       | https://github.com/jonssonyan/cf-workers-proxy | 302 跳转地址            |
+    | DEBUG                  | ×  | false | false                                          | 开启调试                |
 
 ## 接口说明
 ### 1. 更新代理目标 `/update-hostname`
