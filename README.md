@@ -46,24 +46,22 @@
 |-------------|----|--------|--------------------------|----------------|
 | newHostname | 是  | string | `api-stage.example.com` | 新的代理目标域名（可以带端口） |
 
-#### 请求示例
-```bash
-# 基础请求
-curl -X GET "https://cf-auto-proxy.[your-account].workers.dev/update-hostname?newHostname=api.new-backend.com"
+## 请求示例
 
-# 带调试信息的请求（显示详细输出）
-curl -ivX GET \
--H "CF-Connecting-IP: 1.1.1.1" \
-"https://cf-auto-proxy.example.workers.dev/update-hostname?newHostname=backend.company.com"
-```
-## 安全配置
+### 安全配置
 在环境变量中新增：
 
 | 变量名     | 必填 | 示例值               | 说明                 |
 |----------|----|--------------------|--------------------|
 | AUTH_KEY | 是  | your-secret-string | API调用认证密钥，需包含在请求头 |
 
-## 调用示例
+### 调用示例
+```bash
+# 带调试信息的请求（显示详细输出）
+curl -ivX GET \
+-H "CF-Connecting-IP: 1.1.1.1" \
+"https://cf-auto-proxy.example.workers.dev/update-hostname?newHostname=backend.company.com"
+```
 ```bash
 # 带认证的请求
 curl -X GET \
