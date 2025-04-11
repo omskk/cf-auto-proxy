@@ -26,6 +26,7 @@
     | 变量名                    | 必填  | 默认值   | 示例                                             | 备注                  |
     |------------------------|-----|-------|------------------------------------------------|---------------------|
     | ORG_PROXY_HOSTNAME     | √   |       | github.com                                     | 代理地址 hostname       |
+    | AUTH_KEY               | √   |       | your-secret-string                             | API调用认证密钥，需包含在请求头 |
     | PROXY_PROTOCOL         | ×   | https | https                                          | 代理地址协议              |
     | PATHNAME_REGEX         | ×   |       | ^/jonssonyan/                                  | 代理地址路径正则表达式         |
     | UA_WHITELIST_REGEX     | ×   |       | (curl)                                         | User-Agent 白名单正则表达式 |
